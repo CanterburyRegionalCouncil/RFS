@@ -56,7 +56,7 @@ define({
     //Enter the url to your organizations bing maps key if you want to use bing basemaps
     "bingmapskey": "",
     //Defaults to arcgis.com. Set this value to your portal or organization host name.
-    "sharinghost": location.protocol + "//" + "www.arcgis.com",
+    "sharinghost":  "http://" + "www.arcgis.com",
     "units": null,
     "enableSharing": true,
     "defaultMapExtent": true,
