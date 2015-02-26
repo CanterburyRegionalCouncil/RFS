@@ -1,0 +1,62 @@
+{
+    "source": "931653256fd24301a84fc77955914a82",
+    "folderId": "",
+    "values": {
+        "enableAttachments": true,
+        "attachmentIsRequired": false,
+        "attachmentHelpText": "Take a photo or upload one with your request",
+        "attachmentLabel": "Add Image",
+        "defaultMapExtent": true,
+        "details": {
+            "Title": "Canterbury Councils Request for Service",
+            "Logo": "http://test.canterburymaps.govt.nz/media/472a958e-cd67-4c6e-bdb9-0342af202e4c/400",
+            "Description": "<p>Please enter below</p><ul><li>the Incident Type</li><li>your Name</li><li>your Email <span style=\"font-style: italic;\">(so we can update you on the progress)</span></li></ul>"
+        },
+        "showLayer": true,
+        "enableSharing": true,
+        "fields": [
+            {
+                "name": "IncidentType",
+                "alias": "Incident Type",
+                "fieldDescription": "Select from one of the incident types from this list",
+                "visible": true
+            },
+            {
+                "name": "Description",
+                "alias": "Description",
+                "fieldDescription": "Describe your issue",
+                "visible": true,
+                "displayType": "textarea"
+            },
+            {
+                "name": "FullName",
+                "alias": "Full Name",
+                "fieldDescription": "Please enter your name (otherwise your request will be anonymous)",
+                "visible": true,
+                "displayType": "text"
+            },
+            {
+                "name": "Email",
+                "alias": "Email",
+                "fieldDescription": "",
+                "visible": true,
+                "displayType": "email"
+            }
+        ],
+        "form_layer": {
+            "id": "Canterbury_RFS_9812"
+        },
+        "locationSearchOptions": {
+            "enableMyLocation": true,
+            "enableSearch": true,
+            "enableLatLng": false,
+            "enableUSNG": false,
+            "enableMGRS": false,
+            "enableUTM": false
+        },
+        "pushpinColor": "red",
+        "theme": "flatly",
+        "useSmallHeader": true,
+        "webmap": "ce0486e138e7440aba0a560596532fa1"
+    }
+}

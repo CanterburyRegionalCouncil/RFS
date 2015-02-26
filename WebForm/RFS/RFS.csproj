@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F1A376C-34CF-417C-BCAE-05D447475070}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RFS</RootNamespace>
+    <AssemblyName>RFS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\defaults.js" />
+    <Content Include="config\templateConfig.js" />
+    <Content Include="css\browseDialog.css" />
+    <Content Include="css\select2.css" />
+    <Content Include="css\style.css" />
+    <Content Include="images\apple-touch-icon.png" />
+    <Content Include="images\default.png" />
+    <Content Include="images\item.png" />
+    <Content Include="images\online-check.png" />
+    <Content Include="images\pins\blue.png" />
+    <Content Include="images\pins\brown.png" />
+    <Content Include="images\pins\green.png" />
+    <Content Include="images\pins\grey.png" />
+    <Content Include="images\pins\orange.png" />
+    <Content Include="images\pins\purple.png" />
+    <Content Include="images\pins\red.png" />
+    <Content Include="images\pins\yellow.png" />
+    <Content Include="images\select2-spinner.gif" />
+    <Content Include="images\select2.png" />
+    <Content Include="images\select2x2.png" />
+    <Content Include="images\themes\default.png" />
+    <Content Include="index.html" />
+    <Content Include="js\builder\browseIdDlg.js" />
+    <Content Include="js\builder\builder.js" />
+    <Content Include="js\builder\grid.js" />
+    <Content Include="js\builder\PortalItemStore.js" />
+    <Content Include="js\builder\RefreshMixin.js" />
+    <Content Include="js\builder\signInHelper.js" />
+    <Content Include="js\localStorageHelper.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\nls\ar\resources.js" />
+    <Content Include="js\nls\cs\resources.js" />
+    <Content Include="js\nls\da\resources.js" />
+    <Content Include="js\nls\de\resources.js" />
+    <Content Include="js\nls\el\resources.js" />
+    <Content Include="js\nls\es\resources.js" />
+    <Content Include="js\nls\et\resources.js" />
+    <Content Include="js\nls\fi\resources.js" />
+    <Content Include="js\nls\fr\resources.js" />
+    <Content Include="js\nls\he\resources.js" />
+    <Content Include="js\nls\it\resources.js" />
+    <Content Include="js\nls\ja\resources.js" />
+    <Content Include="js\nls\ko\resources.js" />
+    <Content Include="js\nls\lt\resources.js" />
+    <Content Include="js\nls\lv\resources.js" />
+    <Content Include="js\nls\nb\resources.js" />
+    <Content Include="js\nls\nl\resources.js" />
+    <Content Include="js\nls\pl\resources.js" />
+    <Content Include="js\nls\pt-br\resources.js" />
+    <Content Include="js\nls\pt-pt\resources.js" />
+    <Content Include="js\nls\resources.js" />
+    <Content Include="js\nls\ro\resources.js" />
+    <Content Include="js\nls\ru\resources.js" />
+    <Content Include="js\nls\sv\resources.js" />
+    <Content Include="js\nls\th\resources.js" />
+    <Content Include="js\nls\tr\resources.js" />
+    <Content Include="js\nls\vi\resources.js" />
+    <Content Include="js\nls\zh-cn\resources.js" />
+    <Content Include="js\offlineOptions.js" />
+    <Content Include="js\OfflineSupport.js" />
+    <Content Include="js\pushpins.js" />
+    <Content Include="js\ShareModal.js" />
+    <Content Include="js\template.js" />
+    <Content Include="js\themes.js" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\css\bootstrap-theme.css" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\css\bootstrap-theme.min.css" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\css\bootstrap.css" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\css\bootstrap.min.css" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\css\bootstrap.rtl.css" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\js\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\js\bootstrap.min.js" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\js\npm.js" />
+    <Content Include="js\vendor\bootstrap-datetimepicker\css\bootstrap-datetimepicker.css" />
+    <Content Include="js\vendor\bootstrap-datetimepicker\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="js\vendor\bootstrap-datetimepicker\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="js\vendor\bootswatch-3.3.0\.gitignore" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\css\bootswatch.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\carboncostume.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\gridgum.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\logo.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\maxcdn.gif" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\refs\beautifulwebdesign.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\refs\eloquentjavascript.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\refs\htmlandcss.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\shopify.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\stickers.jpg" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\img\tshirt.jpg" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\js\bootswatch.js" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\js\bsa.js" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cerulean\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cerulean\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cerulean\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cerulean\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cosmo\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cosmo\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cosmo\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cosmo\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\custom\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\custom\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\custom\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cyborg\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cyborg\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cyborg\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cyborg\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\darkly\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\darkly\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\darkly\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\darkly\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\default\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\favicon.ico" />
+    <Content Include="js\vendor\bootswatch-3.3.0\flatly\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\flatly\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\flatly\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\flatly\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\vendor\bootswatch-3.3.0\Gruntfile.js" />
+    <Content Include="js\vendor\bootswatch-3.3.0\help\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\journal\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\journal\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\journal\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\journal\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\lumen\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\lumen\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\lumen\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\lumen\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\paper\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\paper\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\paper\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\paper\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\readable\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\readable\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\readable\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\readable\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\sandstone\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\sandstone\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\sandstone\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\sandstone\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\simplex\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\simplex\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\simplex\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\simplex\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\slate\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\slate\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\slate\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\slate\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\spacelab\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\spacelab\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\spacelab\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\spacelab\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\superhero\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\superhero\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\superhero\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\superhero\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\tests\components.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\tests\thumbnail.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\united\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\united\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\united\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\united\thumbnail.png" />
+    <Content Include="js\vendor\bootswatch-3.3.0\yeti\bootstrap.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\yeti\bootstrap.min.css" />
+    <Content Include="js\vendor\bootswatch-3.3.0\yeti\index.html" />
+    <Content Include="js\vendor\bootswatch-3.3.0\yeti\thumbnail.png" />
+    <Content Include="js\vendor\font-awesome-4.2.0\css\font-awesome.css" />
+    <Content Include="js\vendor\font-awesome-4.2.0\css\font-awesome.min.css" />
+    <Content Include="js\vendor\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="js\vendor\html5shiv.min.js" />
+    <Content Include="js\vendor\IndexedDBShim.min.js" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\animated-overlay.gif" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\jquery-ui-1.10.4.custom.css" />
+    <Content Include="js\vendor\jquery-ui\css\ui-lightness\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="js\vendor\jquery-ui\js\jquery-1.10.2.js" />
+    <Content Include="js\vendor\jquery-ui\js\jquery-ui-1.10.4.custom.js" />
+    <Content Include="js\vendor\jquery-ui\js\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="js\vendor\jquery.min.js" />
+    <Content Include="js\vendor\jquery.ui.touch-punch.min.js" />
+    <Content Include="js\vendor\moment-with-langs.min.js" />
+    <Content Include="js\vendor\offline\offline-edit-min.js" />
+    <Content Include="js\vendor\offline\offline.min.js" />
+    <Content Include="js\vendor\respond.min.js" />
+    <Content Include="js\vendor\select2.js" />
+    <Content Include="js\vendor\summernote\summernote-bs2.css" />
+    <Content Include="js\vendor\summernote\summernote-bs3.css" />
+    <Content Include="js\vendor\summernote\summernote.css" />
+    <Content Include="js\vendor\summernote\summernote.js" />
+    <Content Include="js\vendor\summernote\summernote.min.js" />
+    <Content Include="js\vendor\touch-spinner\jquery.bootstrap-touchspin.min.css" />
+    <Content Include="js\vendor\touch-spinner\jquery.bootstrap-touchspin.min.js" />
+    <Content Include="js\vendor\usng.js" />
+    <Content Include="js\wrapper\builder-jquery-deps.js" />
+    <Content Include="js\wrapper\main-jquery-deps.js" />
+    <Content Include="views\BrowseIdDlg.html" />
+    <Content Include="views\builder.html" />
+    <Content Include="views\modal.html" />
+    <Content Include="views\user.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\css\bootstrap-theme.css.map" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\css\bootstrap.css.map" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="js\vendor\bootstrap-3.3.0-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="js\vendor\bootswatch-3.3.0\.travis.yml" />
+    <Content Include="js\vendor\bootswatch-3.3.0\api\2.json" />
+    <Content Include="js\vendor\bootswatch-3.3.0\api\3.json" />
+    <Content Include="js\vendor\bootswatch-3.3.0\assets\less\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\bower.json" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cerulean\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cerulean\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\CNAME" />
+    <Content Include="js\vendor\bootswatch-3.3.0\composer.json" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cosmo\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cosmo\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\custom\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\custom\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cyborg\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\cyborg\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\darkly\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\darkly\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\flatly\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\flatly\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="js\vendor\bootswatch-3.3.0\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="js\vendor\bootswatch-3.3.0\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="js\vendor\bootswatch-3.3.0\Gemfile" />
+    <Content Include="js\vendor\bootswatch-3.3.0\global\build.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\journal\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\journal\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\LICENSE" />
+    <Content Include="js\vendor\bootswatch-3.3.0\lumen\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\lumen\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\package.json" />
+    <Content Include="js\vendor\bootswatch-3.3.0\paper\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\paper\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\readable\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\readable\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\README.md" />
+    <Content Include="js\vendor\bootswatch-3.3.0\sandstone\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\sandstone\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\simplex\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\simplex\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\slate\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\slate\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\spacelab\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\spacelab\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\superhero\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\superhero\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\united\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\united\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\yeti\bootswatch.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\yeti\variables.less" />
+    <Content Include="js\vendor\bootswatch-3.3.0\_config.yml" />
+    <Content Include="js\vendor\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="js\vendor\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="js\vendor\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="js\vendor\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\bordered-pulled.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\core.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\fixed-width.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\font-awesome.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\icons.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\larger.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\list.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\mixins.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\path.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\rotated-flipped.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\spinning.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\stacked.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\less\variables.less" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\font-awesome.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_bordered-pulled.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_core.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_fixed-width.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_icons.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_larger.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_list.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_mixins.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_path.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_rotated-flipped.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_spinning.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_stacked.scss" />
+    <Content Include="js\vendor\font-awesome-4.2.0\scss\_variables.scss" />
+    <None Include="Properties\PublishProfiles\TEST.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50582</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50582/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
