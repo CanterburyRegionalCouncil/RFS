@@ -114,7 +114,8 @@ define(["dojo/Evented", "dojo/_base/declare", "dojo/_base/kernel", "dojo/_base/a
                     lang.mixin(this.config, this.commonConfig, this.orgConfig, this.appConfig, this.customUrlConfig, this.urlConfig);
                     // Set the geometry helper service to be the app default.
                     if (this.config.helperServices && this.config.helperServices.geometry && this.config.helperServices.geometry.url) {
-                        esriConfig.defaults.geometryService = new GeometryService(this.config.helperServices.geometry.url);
+//                        esriConfig.defaults.geometryService = new GeometryService(this.config.helperServices.geometry.url);
+                        esriConfig.defaults.geometryService = new GeometryService("http://gis.ecan.govt.nz/arcgis/rest/services/Utilities/Geometry/GeometryServer");
                     }
 
                     deferred.resolve(this.config);

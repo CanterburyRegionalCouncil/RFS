@@ -93,6 +93,6 @@ define({
           autoComplete: true
         }]
     },
-    "bitlyLogin": "esri",
-    "bitlyKey": "R_65fd9891cd882e2a96b99d4bda1be00e"
+    "bitlyLogin": "o_50vbh3eafi",
+    "bitlyKey": "R_5e4af385d6f14944a7e084e518c0beef"
 });
