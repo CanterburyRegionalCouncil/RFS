@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>49350DCD-EA4E-4B79-8D56-FF84C6BE5971</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FixIt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>03B6AA72D22CFB5BFCCFBC33FCD5BD1F8F387FCB</key>
+		<string>https://github.com/CanterburyRegionalCouncil/RFS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RFS Hybird/Canterbury RFS/platforms/ios/FixIt.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>03B6AA72D22CFB5BFCCFBC33FCD5BD1F8F387FCB</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CanterburyRegionalCouncil/RFS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>03B6AA72D22CFB5BFCCFBC33FCD5BD1F8F387FCB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>03B6AA72D22CFB5BFCCFBC33FCD5BD1F8F387FCB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RFS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

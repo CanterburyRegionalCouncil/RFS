@@ -11,7 +11,7 @@ define({
     },
     "details": {
         "Title": "Canterbury Councils Request for Service",
-        "Logo": "http://test.canterburymaps.govt.nz/media/472a958e-cd67-4c6e-bdb9-0342af202e4c/400",
+        "Logo": "images/logo.png",
         "Description": "<p>Please enter below</p><ul><li>the Incident Type</li><li>your Name</li><li>your Email <span style=\"font-style: italic;\">(so we can update you on the progress)</span></li></ul>"
     },
     "fields": [

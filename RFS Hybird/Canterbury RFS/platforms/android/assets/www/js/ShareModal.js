@@ -31,7 +31,7 @@ function (
             theme: "ShareModal",
             visible: true,
             dialog: null,
-            url: window.location.href,
+            url: "http://test.canterburymaps.govt.nz/webapps/rfs/",
             image: '',
             title: window.document.title,
             summary: '',
@@ -41,8 +41,8 @@ function (
             twitterURL: "https://twitter.com/intent/tweet?url=${url}&text=${title}&hashtags=${hashtags}",
             googlePlusURL: "https://plus.google.com/share?url=${url}",
             bitlyAPI: location.protocol === "https:" ? "https://api-ssl.bitly.com/v3/shorten" : "http://api.bit.ly/v3/shorten",
-            bitlyLogin: "",
-            bitlyKey: ""
+            bitlyLogin: "o_50vbh3eafi",
+            bitlyKey: "R_5e4af385d6f14944a7e084e518c0beef"
         },
         // lifecycle: 1
         constructor: function (options) {

@@ -1,0 +1,16 @@
+//make sure you are in the cordova directory
+
+
+keytool -genkey -v -keystore fixit-release-key.keystore -alias rfs.canterbury.govt.nz -keyalg RSA -keysize 2048 -validity 10000
+
+cordova build --release android
+
+//note 
+//
+
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ./fixit-release-key.keystore ./platforms/android/ant-build/CordovaApp-release-unsigned.apk  rfs.canterbury.govt.nz
+
+//then zip
+
+zipalign -v 4 ./platforms/android/ant-build/CordovaApp-release-unsigned.apk ./fixit-0.1.apk
