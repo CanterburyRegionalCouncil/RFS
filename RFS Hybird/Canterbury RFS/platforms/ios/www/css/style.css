@@ -81,8 +81,8 @@
 .app-error .loading-error {
     display: block;
 }
-#tableDND th,
-#tableDND td {
+.tableDND th,
+.tableDND td {
     vertical-align: middle;
 }
 #geoform .progress-remove-margin {
@@ -182,7 +182,6 @@ input::-ms-clear {
     height: 100%;
     min-height: 100px;
     max-height: 100%;
-    text-align: left;
     overflow: hidden;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
@@ -233,7 +232,15 @@ body.modal-open,
 }
 .fullscreen-button {
     position: absolute;
-    top: 20px;
+    top: 85px;
+    left: 11px;
+    z-index: 31;
+    width:10px;
+    height:10px;
+}
+.basemapToggle-button {
+    position: absolute;
+    top: 15px;
     right: 20px;
     z-index: 31;
 }
@@ -262,4 +269,98 @@ body.modal-open,
 #appLogo {
     width: auto \9;
     margin: 0 auto;
+}
+
+.hintBackgroundColor {
+    background-color:#f2dede;
+}
+/*hide the UI of file input*/
+.btn-file
+{
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background-color: #008cba;
+    border-color: #0079a1;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.hideFileInputUI
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    display: block;
+    cursor: pointer;
+}
+
+.fileInputButton
+{
+    position: absolute;
+    cursor: pointer;
+}
+
+.fullScreenButtonContainer {
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    z-index: 31;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.fullScreenButtonContainer:hover {
+    background-color: #eee;
+}
+.fullScreenButtonContainer .fullScreenImage {
+    font-size: 16px;
+    padding:7px;
+    color: #4C4C4C;
+}
+
+.tableDimension a {
+    text-decoration:none;
+}
+.message
+{
+    display: block;
+}
+.right
+{
+    float: right;
+}
+
+.thumbnailContainer
+{
+    position: relative;
+    border: 1px solid #cdcdcd;
+    width: 77px;
+    height: 77px;
+}
+
+#defaultBasemapThumbnail, #secondaryBasemapThumbnail {
+    width: 75px;
+    height: 75px;
+}
+
+#defaultBasemapLabel, #secondaryBasemapLabel {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 10px;
+    opacity: 0.8;
+    text-align: center;
+    color: #000;
 }

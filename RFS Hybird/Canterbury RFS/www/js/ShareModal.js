@@ -12,7 +12,7 @@ define([
     "dojo/dom-class",
     "dojo/dom-construct",
     "esri/request",
-    "dojo/i18n!application/nls/resources",
+    "dojo/i18n!application/nls/resources"
 ],
 function (
     declare,
@@ -31,7 +31,7 @@ function (
             theme: "ShareModal",
             visible: true,
             dialog: null,
-            url: "http://test.canterburymaps.govt.nz/webapps/rfs/",
+            url: window.location.href,
             image: '',
             title: window.document.title,
             summary: '',
